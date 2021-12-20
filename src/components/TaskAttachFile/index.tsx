@@ -19,7 +19,8 @@ type TaskAttachFileProps = {
 
 const TaskAttachFile = (props: TaskAttachFileProps) => {
   const {
-    taskId
+    taskId,
+    updateTasks
   } = props;
   const {
     commit,

@@ -55,7 +55,7 @@ export const useAxios = <T>({ method, path }: useAxiosProps):ResponseAxios<T> =>
       responseType
     })
     .then((res) => {
-        setResponse(res.data);
+        setResponse(res?.data);
         setError('');
     })
     .catch((err) => {
